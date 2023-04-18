@@ -1,0 +1,29 @@
+@mixin bp($point) {
+ @media (max-width: $point) {
+  @content;
+ }
+}
+
+:root {
+ --text: #999;
+ --title: #111;
+ --accent: #00ce7d;
+
+ --ff: "Mont";
+}
+
+@font-face {
+ font-family: "Mont";
+ src: url("../fonts/mont-bold.woff2") format("woff2"), url("../fonts/mont-bold.woff") format("woff");
+ font-weight: bold;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: "Mont";
+ src: url("../fonts/mont-regular.woff2") format("woff2"), url("../fonts/mont-regular.woff") format("woff");
+ font-weight: 400;
+ font-style: normal;
+ font-display: swap;
+}

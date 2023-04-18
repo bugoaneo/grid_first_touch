@@ -1,0 +1,44 @@
+/*MASONRY*/
+
+.grid--masonry {
+ display: inline-block;
+ column-count: 3;
+ column-gap: clamp(10px, 4vw, 4em);
+ page-break-inside: avoid;
+ break-inside: avoid;
+
+ /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(10px, 4vw, 4em);
+  page-break-inside: avoid;
+  break-inside: avoid;
+  grid-auto-flow: dense;
+  grid-template-rows: repeat(auto-fit, 432px); */
+
+ @include bp(800px) {
+  column-count: 2;
+ }
+ @include bp(500px) {
+  column-count: 1;
+ }
+ .grid__item {
+  display: inline-block;
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: clamp(10px, 4vw, 3.5em);
+  /* font-size: unset; */
+  min-height: 1px;
+  &--tall {
+   .grid__media {
+    height: min(470px, 50vh);
+    @include bp(500px) {
+     height: min(260px, 50vh);
+    }
+   }
+  }
+ }
+ .grid__media {
+  height: min(260px, 50vh);
+  margin-bottom: 1.2em;
+ }
+}

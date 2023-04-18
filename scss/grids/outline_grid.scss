@@ -1,0 +1,85 @@
+/*OUTLINE*/
+
+.grid--outline {
+ grid-template-columns: repeat(4, 1fr);
+ gap: clamp(10px, 1vw, 2em);
+ @include bp(800px) {
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(10px, 1vw, 2em);
+ }
+ @include bp(500px) {
+  grid-template-columns: 1fr;
+ }
+ .grid__item {
+  overflow: hidden;
+  &:hover {
+   > .grid__content {
+    bottom: 20px;
+    opacity: 1;
+   }
+  }
+  &--double {
+   grid-column: span 2;
+   grid-row: span 2;
+  }
+  &--outline {
+   grid-column: span 2;
+   grid-row: span 2;
+   max-height: 640px;
+  }
+  &.right-outline {
+   margin-left: calc(50% - 30vw);
+   .grid__content {
+    justify-content: end;
+    @include bp(800px) {
+     justify-content: start;
+    }
+   }
+   @include bp(800px) {
+    margin-left: 0;
+   }
+  }
+  &.left-outline {
+   margin-right: calc(50% - 30vw);
+   @include bp(800px) {
+    margin-right: 0;
+   }
+  }
+ }
+ .grid__media {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+ }
+ .grid__content {
+  display: grid;
+  justify-content: start;
+  align-content: start;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 0.8em;
+  opacity: 0;
+  will-change: bottom;
+  transition: bottom 0.5s linear, opacity 0.5s 0.2s linear;
+  @include bp(800px) {
+   bottom: 0;
+   opacity: 1;
+  }
+ }
+ .grid__caption {
+  width: fit-content;
+  padding: 0.25em;
+  margin: 0.1em;
+  background-color: #fff;
+ }
+ .grid__notice {
+  width: fit-content;
+  padding: 0.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--accent);
+ }
+}

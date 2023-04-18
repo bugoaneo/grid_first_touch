@@ -1,0 +1,14 @@
+https://preview.themeforest.net/item/portfio-creative-agency-portfolio-html-template/full_screen_preview/42049564
+
+
+https://joshcollinsworth.com/blog/adding-gutenberg-full-and-wide-width-image-support-to-your-wordpress-theme
+
+
+https://www.oddbird.net
+
+
+MASONRY
+https://css-live.ru/css/priklyucheniya-masonry-raskladki-v-css.html
+https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/
+https://caniuse.com/mdn-css_properties_grid-template-rows_masonry
+https://w3c.github.io/csswg-drafts/css-grid-3/#masonry-layout

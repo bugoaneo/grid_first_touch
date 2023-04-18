@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="robots" content="all">
+  <meta property="og:title" content="">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:description" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="34x34">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Grid</title>
+  <link rel="preload" href="fonts/mont-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" style="width: 0;height: 0; position: absolute;">
+    <symbol id="play" viewBox="0 0 512 512">
+      <path fill="currentColor" d="M443.86 196.919 141.46 10.514C119.582-2.955 93.131-3.515 70.702 9.016c-22.429 12.529-35.819 35.35-35.819 61.041v371.112c0 38.846 31.3 70.619 69.77 70.829l.313.001c12.022-.001 24.55-3.769 36.251-10.909 9.413-5.743 12.388-18.029 6.645-27.441-5.743-9.414-18.031-12.388-27.441-6.645-5.473 3.338-10.818 5.065-15.553 5.064-14.515-.079-30.056-12.513-30.056-30.898V70.058c0-11.021 5.744-20.808 15.364-26.183 9.621-5.375 20.966-5.135 30.339.636l302.401 186.405c9.089 5.596 14.29 14.927 14.268 25.601-.022 10.673-5.261 19.983-14.4 25.56L204.147 415.945c-9.404 5.758-12.36 18.049-6.602 27.452 5.757 9.404 18.048 12.36 27.452 6.602l218.611-133.852c20.931-12.769 33.457-35.029 33.507-59.55.05-24.518-12.386-46.83-33.255-59.678z" />
+    </symbol>
+  </svg>
+
+  <div class="wrapper">
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Simple Grid</h2>
+        <div class="grid grid--simple">
+          <div class="grid__item grid__item--half">
+            <div class="grid__media">
+              <img src="img/hero-img-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid__item grid__item--half">
+            <div class="grid__media">
+              <img src="img/hero-img-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid__item grid__item--big video">
+            <div class="grid__media">
+              <img src="img/hero-img-3.jpg" alt="">
+            </div>
+            <div class="grid__icon">
+              <svg class="icon" viewBox="0 0 512 512" width="25">
+                <use xlink:href="#play"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="grid__item grid__item--third">
+            <div class="grid__media">
+              <img src="img/hero-img-4.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid__item grid__item--third">
+            <div class="grid__media">
+              <img src="img/hero-img-5.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid__item grid__item--third">
+            <div class="grid__media">
+              <img src="img/portfolio-2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- <p>https://winsfolio.net/html/portfio/index-3.html</p> -->
+        <div class="section__header center">
+          <div class="section__caption section__caption--icon">Our portfolio</div>
+          <h2 class="section__title">Work showcase</h2>
+        </div>
+        <div class="grid grid--masonry">
+
+          <div class="grid__item grid__item--tall">
+            <div class="grid__media"><img src="img/portfolio-1.jpg" alt=""></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a href="'" class="grid__tag">Web design</a>
+                <a href="'" class="grid__tag">Graphic</a>
+                <a href="'" class="grid__tag">Graphic</a>
+              </div>
+              <h3 class="grid__caption"><a href="">Melanin Goddess</a></h3>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/portfolio-page-2.jpg" alt=""></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a href="" class="grid__tag">Web design</a>
+                <a href="" class="grid__tag">Graphic</a>
+                <a href="" class="grid__tag">Dewelopment</a>
+              </div>
+              <h3 class="grid__caption"><a href="">The Dance</a></h3>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/portfolio-page-6.jpg" alt=""></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a href="" class="grid__tag">Web design</a>
+              </div>
+              <h3 class="grid__caption"><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, voluptatibus?</a></h3>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/portfolio-18.jpg" alt=""></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a href="'" class="grid__tag">Web design</a>
+                <a href="'" class="grid__tag">Mobil Dewelopment</a>
+                <a href="'" class="grid__tag">Dewelopment</a>
+              </div>
+              <h3 class="grid__caption"><a href="">The Dance Illustration Design</a></h3>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/portfolio-2.jpg" alt=""></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a href="" class="grid__tag">Mobil Dewelopment</a>
+                <a href="" class="grid__tag">Dewelopment</a>
+              </div>
+
+              <h3 class="grid__caption"><a href="">Lorem, ipsum dolor.</a></h3>
+            </div>
+          </div>
+
+          <div class="grid__item grid__item--tall">
+            <div class="grid__media"><img src="img/hero-img-10.jpg" alt=""></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a href="'" class="grid__tag">Mobil Dewelopment</a>
+                <a href="'" class="grid__tag">Dewelopment</a>
+              </div>
+
+              <h3 class="grid__caption"><a href="">Lorem, ipsum dolor.</a></h3>
+            </div>
+          </div>
+
+          <div class="grid__item grid__item--tall">
+            <div class="grid__media"></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a href="'" class="grid__tag">UI/UX Desine</a>
+                <a href="'" class="grid__tag">Mobil Dewelopment</a>
+                <a href="'" class="grid__tag">Dewelopment</a>
+              </div>
+
+              <h3 class="grid__caption"><a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ex ullam quod perspiciatis eos error.</a></h3>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/portfo.jpg" alt="Name of image"></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a href="" class="grid__tag">Mobil Dewelopment</a>
+                <a href="" class="grid__tag">Dewelopment</a>
+              </div>
+              <h3 class="grid__caption"><a href="">Lorem, ipsum dolor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, possimus!</a></h3>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/portfolio-page-8.jpg" alt="Name of image"></div>
+            <div class="grid__content">
+              <div class="grid__tags">
+                <a class="grid__tag" href="">Mobil Dewelopment</a>
+                <a class="grid__tag" href="">Dewelopment</a>
+              </div>
+              <h3 class="grid__caption"><a href="">Lorem, ipsum dolor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, possimus!</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header center">
+          <div class="section__caption">My portfolio</div>
+          <h2 class="section__title">Visit my portfolio</h2>
+        </div>
+        <div class="grid grid--portfolio">
+          <div class="grid__item grid__item--banner">
+            <div class="grid__media">
+              <img src="img/hero-img-2.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="grid__item grid__item--bigbanner">
+            <div class="grid__media">
+              <img src="img/hero-img-3.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media">
+              <img src="img/hero-img-1.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="grid__item grid__item--bigbanner">
+            <div class="grid__media">
+              <img src="img/hero-img-4.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="grid__item grid__item--banner">
+            <div class="grid__media">
+              <img src="img/hero-img-5.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media">
+              <img src="img/portfolio-0.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="grid__media">
+              <img src="img/hero-img-6.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="grid__item grid__item--plank">
+            <div class="grid__media">
+              <img src="img/portfolio-1.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header center">
+          <div class="section__caption section__caption--icon">Our latest projects</div>
+          <h2 class="section__title">Check Our Amazing Works</h2>
+        </div>
+        <div class="grid grid--outline">
+          <div class="grid__item grid__item--double">
+            <div class="grid__media"><img src="img/hero-img-4.jpg" alt=""></div>
+            <div class="grid__content">
+              <h3 class="grid__caption"><a href="">Website desine</a></h3>
+              <p class="grid__notice">Mockup disine</p>
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/hero-img-1.jpg" alt=""></div>
+            <div class="grid__content">
+              <h3 class="grid__caption"><a href="">Website desine</a></h3>
+              <p class="grid__notice">Mockup desine</p>
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/portfolio-2.jpg" alt=""></div>
+            <div class="grid__content">
+              <h3 class="grid__caption"><a href="">Website desine</a></h3>
+              <p class="grid__notice">Mockup desine</p>
+            </div>
+          </div>
+          <div class="grid__item grid__item--outline left-outline">
+            <div class="grid__media"><img src="img/hero-img-3.jpg" alt=""></div>
+            <div class="grid__content">
+              <h3 class="grid__caption"><a href="">Website desine</a></h3>
+              <p class="grid__notice">Mockup desine</p>
+            </div>
+          </div>
+          <div class="grid__item grid__item--outline right-outline">
+            <div class="grid__media"><img src="img/portfolio-18.jpg" alt=""></div>
+            <div class="grid__content">
+              <h3 class="grid__caption"><a href="">Website desine</a></h3>
+              <p class="grid__notice">Mockup desine</p>
+            </div>
+          </div>
+          <div class="grid__item grid__item--double">
+            <div class="grid__media"><img src="img/portfolio-19.jpg" alt=""></div>
+            <div class="grid__content">
+              <h3 class="grid__caption"><a href="">Website desine</a></h3>
+              <p class="grid__notice">Mockup disine</p>
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/hero-img-5.jpg" alt=""></div>
+            <div class="grid__content">
+              <h3 class="grid__caption"><a href="">Website desine</a></h3>
+              <p class="grid__notice">Mockup desine</p>
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__media"><img src="img/hero-img-6.jpg" alt=""></div>
+            <div class="grid__content">
+              <h3 class="grid__caption"><a href="">Website desine</a></h3>
+              <p class="grid__notice">Mockup desine</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--about">
+          <div class="grid__item grid__item--small-pic">
+            <div class="grid__media grid__media--small"><img src="img/about-1.jpg" alt=""></div>
+          </div>
+          <div class="grid__item decoration-top-center">
+            <div class="grid__media grid__media--plank"><img src="img/about-2.jpg" alt=""></div>
+          </div>
+          <div class="grid__item decoration-bottom-right">
+            <div class="grid__media"><img src="img/about-3.jpg" alt=""></div>
+          </div>
+          <div class="grid__item">
+            <div class="section__header">
+              <div class="section__caption">Who We Are</div>
+              <h2 class="section__title">Unique Solutions for You Business</h2>
+            </div>
+            <p class="section__text">We're a creative design, digital and content agency tucked away in the heart of the Kent countryside. We produce great design that achieves your objectives, while having some fun along the way.</p>
+            <div class="grid__plank">
+              <div class="big-diget">15<sup>+</sup></div>
+              <p class="grid__plank-text">Years Experience <br /> Working</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline">
+      <div class="section__header center">
+        <div class="section__caption">My resume</div>
+        <h2 class="section__title">10+ years of expiriance</h2>
+      </div>
+      <div class="timeline__list">
+        <div class="timeline__item">
+          <div class="timeline__title">Education</div>
+          <div class="timeline__content-list">
+            <div class="timeline__content-item">
+              <div class="timeline__caption">BC in Computer Sience</div>
+              <div class="timeline__subcaption">University ov ULAV (2018-2022)</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci nihil in, recusandae nemo dolore necessitatibus officiis totam rerum soluta?</p>
+            </div>
+            <div class="timeline__content-item">
+              <div class="timeline__caption">AS - Sience & Information</div>
+              <div class="timeline__subcaption">University ov ULAV (2016-2018)</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci nihil in, recusandae nemo dolore necessitatibus officiis totam rerum soluta?</p>
+            </div>
+            <div class="timeline__content-item">
+              <div class="timeline__caption">Secondary School Aducation</div>
+              <div class="timeline__subcaption">KinderGarden (2006-2016)</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci nihil in, recusandae nemo dolore necessitatibus officiis totam rerum soluta?</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__title">Software Skills</div>
+          <div class="timeline__content-list">
+            <div class="timeline__content-item">
+              <div class="timeline__caption">UI/UX Desine</div>
+              <ul class="timeline__skills">
+                <li><span>Figma</span><span>90%</span></li>
+                <li><span>Adobe XD</span><span>85%</span></li>
+                <li><span>Photoshop</span><span>80%</span></li>
+              </ul>
+            </div>
+            <div class="timeline__content-item">
+              <div class="timeline__caption">Feb Deweloper</div>
+              <ul class="timeline__skills">
+                <li><span>WordPress</span><span>90%</span></li>
+                <li><span>Mockups</span><span>85%</span></li>
+                <li><span>Weebly</span><span>80%</span></li>
+              </ul>
+            </div>
+            <div class="timeline__content-item">
+              <div class="timeline__caption">App Development</div>
+              <ul class="timeline__skills">
+                <li><span>Quixy</span><span>92%</span></li>
+                <li><span>AppyPie</span><span>87%</span></li>
+                <li><span>iBuildApp</span><span>82%</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__title">Experience</div>
+          <div class="timeline__content-list">
+            <div class="timeline__content-item">
+              <div class="timeline__caption">Web Developer & Triner</div>
+              <div class="timeline__subcaption">Brac Developer Team (2012-2016)</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci nihil in, recusandae nemo dolore necessitatibus officiis totam rerum soluta?</p>
+            </div>
+            <div class="timeline__content-item">
+              <div class="timeline__caption">Front-end Developer</div>
+              <div class="timeline__subcaption">Brane (2016-2018)</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci nihil in, recusandae nemo dolore necessitatibus officiis totam rerum soluta?</p>
+            </div>
+            <div class="timeline__content-item">
+              <div class="timeline__caption">UI/UX Designer</div>
+              <div class="timeline__subcaption">Google Out Tech (2017 - Present)</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci nihil in, recusandae nemo dolore necessitatibus officiis totam rerum soluta?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>

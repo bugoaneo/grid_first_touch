@@ -1,0 +1,34 @@
+.grid--about {
+ align-items: center;
+ grid-template-columns: repeat(2, 1fr);
+ @include bp(800px) {
+  grid-template-columns: 1fr;
+  row-gap: clamp(10px, 4vw, 4em);
+ }
+ column-gap: clamp(10px, 4vw, 4em);
+ .section__title {
+  font-weight: normal;
+ }
+ .grid__item {
+  &:nth-child(2) {
+   @include bp(800px) {
+    order: 1;
+   }
+  }
+  &--small-pic {
+   justify-self: end;
+   @include bp(800px) {
+    display: none;
+   }
+  }
+ }
+ .grid__media {
+  aspect-ratio: 1/1;
+  &--small {
+   width: 200px;
+  }
+  &--plank {
+   aspect-ratio: 2/1;
+  }
+ }
+}

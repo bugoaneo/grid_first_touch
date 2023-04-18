@@ -1,0 +1,118 @@
+html {
+ font-family: var(--ff, sans-serif);
+ font-size: clamp(14px, calc(2vw - 10px), 16px);
+ color: var(--text);
+}
+
+img {
+ position: relative;
+ text-align: center;
+ white-space: pre-wrap;
+ background-color: var(--text);
+ &:before,
+ &:after {
+  display: inherit;
+  position: absolute;
+  width: 100%;
+ }
+ &:after {
+  content: "Sorry, img is undefined :(" "\a"attr(alt) !important;
+  padding: 0 1rem;
+  transform: translateY(-50%);
+  top: 50%;
+  color: var(--title);
+ }
+ &:before {
+  content: "";
+  background: inherit;
+  font-size: 0;
+  height: 100%;
+ }
+}
+
+.section {
+ padding: max(3em, 4vmax) 0;
+}
+
+.section__caption {
+ position: relative;
+ display: inline-block;
+ text-transform: uppercase;
+ border-bottom: 0.2em solid var(--accent);
+ font-size: 1.2em;
+ font-weight: bold;
+ &--icon {
+  &:before {
+   content: "";
+   position: relative;
+   transform: rotate(50deg);
+   display: block;
+   width: 0.2em;
+   height: 1em;
+   margin: 0 auto 1.5em auto;
+   background-color: currentColor;
+   box-shadow: 6px 5px 0 0 currentColor;
+  }
+ }
+}
+
+.section__title {
+ margin-bottom: 0.25em;
+ font-size: 3em;
+ font-weight: bold;
+ color: var(--title);
+}
+
+.section__text {
+ margin-bottom: 1em;
+ font-size: 1.2em;
+ line-height: 1.45;
+}
+
+.container {
+ width: min(max(320px, 100%), 1340px);
+ padding: 0 20px;
+ margin: 0 auto;
+}
+
+.center {
+ text-align: center;
+}
+
+.big-diget {
+ color: var(--accent);
+ font-size: 6em;
+ line-height: 1;
+ font-weight: bold;
+ sup {
+  position: relative;
+  top: -0.25em;
+  font-size: 0.8em;
+  line-height: 1;
+ }
+}
+
+[class*="decoration"] {
+ position: relative;
+ &:before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  padding-bottom: 17%;
+  background: url(../img/dots.png) top center/contain;
+ }
+}
+.decoration-top-center {
+ &:before {
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+ }
+}
+
+.decoration-bottom-right {
+ &:before {
+  bottom: -5%;
+  right: -8%;
+ }
+}
